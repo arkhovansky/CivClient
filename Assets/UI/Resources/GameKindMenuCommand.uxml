@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/MainMenu.uss?fileID=7433441132597879392&amp;guid=71fa74a7b0834984595ebef724835a01&amp;type=3#MainMenu" />
+    <Style src="project://database/Assets/UI/Resources/Common.uss?fileID=7433441132597879392&amp;guid=55bd50fe249a4acd932ad1b6ba964387&amp;type=3#Common" />
+
+    <ui:Button text="GameKindMenu.CreateGameInstanceCommand.Label" name="playNewGameInstanceCommand" class="game-kind-menu__command" />
+</ui:UXML>

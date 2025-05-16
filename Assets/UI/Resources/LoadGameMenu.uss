@@ -1,0 +1,39 @@
+.table {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(94, 94, 44);
+    border-right-color: rgb(94, 94, 44);
+    border-top-color: rgb(94, 94, 44);
+    border-bottom-color: rgb(94, 94, 44);
+}
+
+.table .unity-label {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.unity-list-view__item:hover {
+    border-top-color: rgb(229, 229, 137);
+    border-bottom-color: rgb(229, 229, 137);
+}
+
+.unity-collection-view__item--selected {
+    border-top-color: rgb(229, 229, 137);
+    border-bottom-color: rgb(229, 229, 137);
+}
+
+.sectionHeaderName {
+    font-size: 14px;
+}
+
+.sectionHeaderLine {
+    background-color: rgb(229, 229, 137);
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 15px;
+}

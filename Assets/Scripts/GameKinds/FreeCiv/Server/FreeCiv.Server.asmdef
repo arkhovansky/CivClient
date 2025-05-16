@@ -1,0 +1,18 @@
+{
+    "name": "FreeCiv.Server",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5ad572cd065ce2443ac30d4ed94601df",
+        "GUID:7793077a398a2414783cc469be27fb8c",
+        "GUID:2321c936cdf6d0548b3e465d3afabd99"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}

@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/MainMenu.uss?fileID=7433441132597879392&amp;guid=71fa74a7b0834984595ebef724835a01&amp;type=3#MainMenu" />
+    <Style src="project://database/Assets/UI/Resources/Common.uss?fileID=7433441132597879392&amp;guid=55bd50fe249a4acd932ad1b6ba964387&amp;type=3#Common" />
+    <ui:VisualElement name="mainMenuPanel">
+        <ui:VisualElement name="continueLastGameBlock">
+            <ui:VisualElement>
+                <ui:Button text="Continue Last Game" name="continueLastGameButton" class="main-menu__button text-only-button" />
+                <UILib.RadialThrobber />
+            </ui:VisualElement>
+            <ui:VisualElement name="lastGame" class="multiline">
+                <ui:Label text="{Game name}" display-tooltip-when-elided="true" name="gameName" class="fieldText" />
+                <ui:VisualElement style="flex-direction: row;">
+                    <ui:Label tabindex="-1" text="{Type}" display-tooltip-when-elided="true" name="gameType" class="fieldText" />
+                    <ui:Label tabindex="-1" text=" - " display-tooltip-when-elided="true" />
+                    <ui:Label tabindex="-1" text="{Ruleset}" display-tooltip-when-elided="true" name="ruleset" class="fieldText" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-direction: row;">
+                    <ui:Label name="playableSide" text="{PlayableSide}" display-tooltip-when-elided="true" class="fieldText" />
+                    <ui:Label tabindex="-1" text=" (currently)" display-tooltip-when-elided="true" name="playableSideCurrently" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-direction: row;">
+                    <ui:Label tabindex="-1" text="{Game date}" display-tooltip-when-elided="true" name="gameDate" class="fieldText" />
+                    <ui:Label tabindex="-1" text="(turn" display-tooltip-when-elided="true" />
+                    <ui:Label display-tooltip-when-elided="true" name="turn" text="{Turn}" />
+                    <ui:Label tabindex="-1" text=")" display-tooltip-when-elided="true" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="{Comment}" display-tooltip-when-elided="true" name="comment" class="fieldText" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button text="New Game" name="newGameButton" class="main-menu__button text-only-button" />
+        <ui:VisualElement>
+            <ui:Button text="Load Game" name="loadGameButton" class="main-menu__button text-only-button" />
+            <UILib.RadialThrobber />
+        </ui:VisualElement>
+        <ui:Button text="Settings" name="settingsButton" class="main-menu__button text-only-button" />
+    </ui:VisualElement>
+</ui:UXML>

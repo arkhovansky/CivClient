@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/MainMenu.uss?fileID=7433441132597879392&amp;guid=71fa74a7b0834984595ebef724835a01&amp;type=3#MainMenu" />
+    <Style src="project://database/Assets/UI/Resources/Common.uss?fileID=7433441132597879392&amp;guid=55bd50fe249a4acd932ad1b6ba964387&amp;type=3#Common" />
+    <UniHiMod.Component role="Panel">
+        <UniHiMod.Component instanceName="Game" role="Category">
+            <UniHiMod.Component instanceName="PlayNewGameInstance" role="Command"/>
+            <UniHiMod.Component instanceName="BrowseGameInstances" role="Command"/>
+        </UniHiMod.Component>
+        <ui:VisualElement name="configCategory" class="menu-category">
+            <ui:Instance template="GameKindMenuCommand" name="settingsCommand"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="infoCategory" class="menu-category">
+            <ui:Instance template="GameKindMenuCommand" name="aboutCommand"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="exitCategory" class="menu-category">
+<!--            <ui:Button text="" name="exitApplicationCommand" class="game-kind-menu__button" />-->
+        </ui:VisualElement>
+    </UniHiMod.Component>
+</ui:UXML>

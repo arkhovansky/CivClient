@@ -1,0 +1,23 @@
+{
+    "name": "Client",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7793077a398a2414783cc469be27fb8c",
+        "GUID:ccdb2a3bafe19b34792bb6e19521813e",
+        "GUID:62b9d94cd08d5d047b266d42e8684cb8",
+        "GUID:e38e407d35b9ac341a175a37f2ce83f8",
+        "GUID:213524284a698b343b5dead7593aa806"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Sodium.Frp.dll",
+        "Sodium.Core.Frp.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

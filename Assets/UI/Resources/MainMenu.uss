@@ -1,0 +1,53 @@
+#mainMenuPanel {
+    width: 300px;
+    flex-grow: 1;
+    justify-content: center;
+    background-color: rgba(0, 0, 64, 0.75);
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: flex-start;
+}
+
+.main-menu__button {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    color: rgb(229, 229, 137);
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#continueLastGameBlock {
+    margin-bottom: 40px;
+}
+
+#continueLastGameButton {
+    margin-bottom: 10px;
+}
+
+#lastGame {
+    margin-left: 20px;
+}
+
+#settingsButton {
+    margin-top: 60px;
+}
+
+#lastGame .label {
+    color: rgb(191, 191, 255);
+}
+
+.fieldText {
+    color: rgb(229, 229, 137);
+}
+
+.radial-throbber {
+    --track-color: rgb(191, 191, 255);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

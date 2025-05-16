@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/LoadGameMenu.uss?fileID=7433441132597879392&amp;guid=518bb14f69b9e2e409fba22bc30718ca&amp;type=3#LoadGameMenu" />
+    <ui:VisualElement class="multiline" style="margin-top: 5px; margin-bottom: 5px;">
+        <ui:Label text="Year" display-tooltip-when-elided="true" name="year" />
+        <ui:Label text="Comment" display-tooltip-when-elided="true" name="comment" />
+        <ui:VisualElement style="flex-direction: row;">
+            <ui:Label text="Date Time" display-tooltip-when-elided="true" name="dateTime" />
+            <ui:Label text=" (auto)" display-tooltip-when-elided="true" name="autoSaved" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

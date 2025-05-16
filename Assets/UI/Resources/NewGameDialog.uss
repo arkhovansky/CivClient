@@ -1,0 +1,43 @@
+#thisPlayerPane {
+    flex-grow: 1;
+}
+
+#worldPane {
+    flex-grow: 2;
+}
+
+.paneHeader {
+    -unity-text-align: upper-center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#worldGeneralContainer {
+}
+
+#worldGeneral {
+    margin-bottom: 30px;
+    min-width: 50%;
+}
+
+.subPaneHeader {
+    -unity-text-align: upper-center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#terrain {
+    flex-grow: 1;
+}
+
+#terrainShape {
+    flex-grow: 1;
+}
+
+#terrainSize {
+    flex-grow: 1;
+}
+
+#polities {
+    flex-grow: 1;
+}

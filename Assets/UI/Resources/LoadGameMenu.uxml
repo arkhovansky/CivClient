@@ -1,0 +1,77 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/LoadGameMenu.uss?fileID=7433441132597879392&amp;guid=518bb14f69b9e2e409fba22bc30718ca&amp;type=3#LoadGameMenu" />
+    <Style src="project://database/Assets/UI/Resources/Common.uss?fileID=7433441132597879392&amp;guid=55bd50fe249a4acd932ad1b6ba964387&amp;type=3#Common" />
+    <ui:VisualElement class="dialog">
+        <ui:VisualElement style="flex-direction: row; flex-grow: 1; justify-content: space-around;">
+            <ui:VisualElement name="games" class="pane" style="flex-grow: 1;">
+                <ui:ListView focusable="true" virtualization-method="DynamicHeight" name="gamesList" style="flex-grow: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="snapshots" class="pane" style="flex-grow: 1;">
+                <ui:ListView focusable="true" name="snapshotsList" virtualization-method="DynamicHeight" style="flex-grow: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="properties" class="pane" style="flex-grow: 2; height: auto;">
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1">
+                    <ui:VisualElement name="gameSection" class="section">
+                        <ui:Label text="Game" display-tooltip-when-elided="true" class="sectionHeaderName" />
+                        <ui:VisualElement class="sectionHeaderLine" />
+                        <ui:VisualElement style="flex-direction: row;">
+                            <ui:Label text="Name: " display-tooltip-when-elided="true" />
+                            <ui:Label text="Name" display-tooltip-when-elided="true" name="gameName" />
+                        </ui:VisualElement>
+                        <ui:Label text="Description:" display-tooltip-when-elided="true" />
+                        <ui:VisualElement name="playersTable">
+                            <ui:Label text="Players:" display-tooltip-when-elided="true" />
+                            <ui:VisualElement class="table" style="flex-direction: row;">
+                                <ui:VisualElement name="playersTable_Species">
+                                    <ui:Label text="Species" display-tooltip-when-elided="true" />
+                                    <ui:Label text="Human" display-tooltip-when-elided="true" />
+                                    <ui:Label text="AI" display-tooltip-when-elided="true" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="playersTable_Name">
+                                    <ui:Label text="Name" display-tooltip-when-elided="true" />
+                                    <ui:Label text="Alexander" display-tooltip-when-elided="true" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="playersTable_Difficulty">
+                                    <ui:Label text="Difficulty" display-tooltip-when-elided="true" />
+                                    <ui:Label display-tooltip-when-elided="true" />
+                                    <ui:Label text="Normal" display-tooltip-when-elided="true" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="playersTable_Nation">
+                                    <ui:Label text="Nation" display-tooltip-when-elided="true" />
+                                    <ui:Label text="America" display-tooltip-when-elided="true" />
+                                    <ui:Label text="Random -&gt; France" display-tooltip-when-elided="true" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="playersTable_Leader">
+                                    <ui:Label text="Leader" display-tooltip-when-elided="true" />
+                                    <ui:Label text="George Washington" display-tooltip-when-elided="true" />
+                                    <ui:Label text="Napoleon" display-tooltip-when-elided="true" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement style="flex-direction: row;">
+                            <ui:Label text="Ruleset: " display-tooltip-when-elided="true" />
+                            <ui:Label text="Ruleset" display-tooltip-when-elided="true" name="ruleset" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="snapshotSection" class="section">
+                        <ui:Label text="Snapshot" display-tooltip-when-elided="true" class="sectionHeaderName" />
+                        <ui:VisualElement class="sectionHeaderLine" />
+                        <ui:VisualElement style="flex-direction: row;">
+                            <ui:Label text="Year: " display-tooltip-when-elided="true" />
+                            <ui:Label text="Year" display-tooltip-when-elided="true" name="year" />
+                        </ui:VisualElement>
+                        <ui:VisualElement style="flex-direction: row;">
+                            <ui:Label text="Saved at: " display-tooltip-when-elided="true" />
+                            <ui:Label text="Timestamp" display-tooltip-when-elided="true" name="timestamp" />
+                            <ui:Label text=" (auto)" display-tooltip-when-elided="true" name="autoSaved" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="buttonsPane">
+            <ui:Button text="Back" display-tooltip-when-elided="true" name="backButton" class="screenButton" />
+            <ui:Button text="Load" display-tooltip-when-elided="true" name="loadButton" class="screenButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

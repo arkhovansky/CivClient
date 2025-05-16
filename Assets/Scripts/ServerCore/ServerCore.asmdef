@@ -1,0 +1,16 @@
+{
+    "name": "ServerCore",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7793077a398a2414783cc469be27fb8c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}

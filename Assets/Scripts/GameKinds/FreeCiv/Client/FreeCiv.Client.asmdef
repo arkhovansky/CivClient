@@ -1,0 +1,19 @@
+{
+    "name": "FreeCiv.Client",
+    "rootNamespace": "",
+    "references": [
+        "GUID:664a6465d7bec414e98ea2d997b5db8d",
+        "GUID:5ad572cd065ce2443ac30d4ed94601df",
+        "GUID:7793077a398a2414783cc469be27fb8c",
+        "GUID:e38e407d35b9ac341a175a37f2ce83f8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

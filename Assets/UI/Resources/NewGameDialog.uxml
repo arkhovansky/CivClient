@@ -1,0 +1,59 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/NewGameDialog.uss?fileID=7433441132597879392&amp;guid=94c3fd9c28921cc4a8dfb8a4a562b79a&amp;type=3#NewGameDialog" />
+    <Style src="project://database/Assets/UI/Resources/Common.uss?fileID=7433441132597879392&amp;guid=55bd50fe249a4acd932ad1b6ba964387&amp;type=3#Common" />
+    <Style src="project://database/Assets/UI/Resources/LoadGameMenu.uss?fileID=7433441132597879392&amp;guid=518bb14f69b9e2e409fba22bc30718ca&amp;type=3#LoadGameMenu" />
+    <ui:VisualElement class="dialog" style="flex-direction: row;">
+        <ui:VisualElement name="worldPane" class="pane">
+            <ui:Label tabindex="-1" text="World" display-tooltip-when-elided="true" name="worldPaneHeader" class="paneHeader" />
+            <ui:VisualElement name="worldGeneralContainer" style="align-items: center;">
+                <ui:VisualElement name="worldGeneral">
+                    <ui:VisualElement name="worldSize">
+                        <ui:DropdownField label="World Size" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="worldSizeClass" />
+                    </ui:VisualElement>
+                    <ui:GroupBox text="Per Polity Space" name="perPolitySpace">
+                        <ui:DropdownField index="-1" choices="System.Collections.Generic.List`1[System.String]" />
+                        <ui:TextField picking-mode="Ignore" label="Per Polity Area" />
+                    </ui:GroupBox>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:VisualElement name="terrain">
+                    <ui:Label tabindex="-1" text="Terrain" display-tooltip-when-elided="true" class="subPaneHeader" />
+                    <ui:VisualElement style="flex-direction: row;">
+                        <ui:VisualElement name="terrainShape">
+                            <ui:Label tabindex="-1" text="Shape" display-tooltip-when-elided="true" />
+                            <ui:DropdownField index="-1" choices="System.Collections.Generic.List`1[System.String]" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="terrainSize">
+                            <ui:Label tabindex="-1" text="Size" display-tooltip-when-elided="true" />
+                            <ui:DropdownField label="Size Class" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="terrainSizeClass" />
+                            <ui:TextField picking-mode="Ignore" label="Area" value="filler text" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="polities">
+                    <ui:Label tabindex="-1" text="Polities" display-tooltip-when-elided="true" class="subPaneHeader" />
+                    <ui:TextField picking-mode="Ignore" label="Number of Polities" />
+                    <ui:VisualElement name="polityPlayers" style="flex-direction: row;">
+                        <ui:VisualElement name="player">
+                            <ui:Label tabindex="-1" text="Player" display-tooltip-when-elided="true" />
+                            <ui:Label tabindex="-1" text="You" display-tooltip-when-elided="true" />
+                            <ui:Label tabindex="-1" text="AI (mediocre)" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="nation">
+                            <ui:Label tabindex="-1" text="Nation" display-tooltip-when-elided="true" />
+                            <ui:Label tabindex="-1" text="Romans" display-tooltip-when-elided="true" />
+                            <ui:Label tabindex="-1" text="&lt;Random&gt;" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="color">
+                            <ui:Label tabindex="-1" text="Color" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="thisPlayerPane" class="pane">
+            <ui:Label tabindex="-1" text="You" display-tooltip-when-elided="true" name="thisPlayerPaneHeader" class="paneHeader" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
